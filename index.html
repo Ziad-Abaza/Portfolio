@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <!-- <div class="brand-img">
+                <img class="img img-circle" src="images/ziad-hassan-header.jpg" alt="my picture">
+            </div> -->
+            <div class="brand-title">
+                Portfolio
+            </div>
+        </div>
+        <nav class="quick-access-links">
+            <button class="burger-menu-btn" aria-label="Toggle Navigation Menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider-container">
+                <div class="slide-show">
+                    <img src="images/slide-show/0.svg" alt="Image 1">
+                    <div class="slide-text main">
+                        <h3><span>Welcome</span> to my world of work and achievements!</h3>
+                        <p>
+                            I'm Ziad Hassan, a <span>Full Stack</span> Web Developer, and I'm delighted to share my
+                            professional journey in the field of Information Technology with you. Here, you'll find a
+                            diverse
+                            collection of projects and applications I've developed, the education I've received, and the
+                            experiences
+                            I've gone through. I hope you'll find something inspiring and intriguing. Feel free to reach
+                            out to me
+                            if you need more information or if you'd like to collaborate.
+                            <br>
+                            Thank you for visiting!
+                        </p>
+                    </div>
+                </div>
+                <div class="all-thumbnail">
+                    <img class="thumbnail item-1" src="images/slide-show/0.svg" onclick="currentSlide(1)" alt="صورة 1">
+                    <img class="thumbnail item-2" src="images/slide-show/1.svg" onclick="currentSlide(2)" alt="صورة 2">
+                    <img class="thumbnail item-3" src="images/slide-show/2.svg" onclick="currentSlide(3)" alt="صورة 3">
+                </div>
+                <div class="slide-show">
+                    <img src="images/slide-show/1.svg" alt="Image 2">
+                    <div class="slide-text">
+                        <h3><span>Projects</span> that Define My Career</h3>
+                        <p>
+                            Dive into a selection of my most notable projects, showcasing a blend of creativity and
+                            technical expertise. From <span>web applications</span> to <span>mobile apps</span>, each
+                            project is a testament to my commitment to delivering high-quality solutions. Explore the
+                            details and see how these projects have made an impact.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-show">
+                    <img src="images/slide-show/2.svg" alt="Image 3">
+                    <div class="slide-text">
+                        <h3><span>Education</span> and Learning</h3>
+                        <p>
+                            My educational journey has been filled with enriching experiences and profound knowledge.
+                            Here, I share the milestones that have shaped my understanding of technology and my ability
+                            to innovate. From formal education to self-learning endeavors, discover how I stay at the
+                            forefront of the industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>About <span>me</span></h2>
+                    <p>
+                        Hello, I'm Ziad Hassan, a student majoring in Information Technology at the <span>Borg El Arab
+                            University of Technology</span>. My journey into the world of programming began with a deep
+                        passion for technology and a strong interest in crafting innovative web experiences.
+                        <br>
+                        I specialize in Full Stack Development, where I've honed my programming skills using
+                        <span>PHP</span>, <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
+                        <span>Tailwind</span>
+                        , <span>Bootstrap</span>,and <span>Laravel</span>, along with
+                        managing databases using <span>MySQL</span> and developing <span>APIs</span>. Designing and
+                        implementing web projects is my
+                        passion, and I enjoy creating attractive user interfaces and robust systems alike.
+                        <br>
+                        Furthermore, I have experience in programming languages such as <span>C</span>,
+                        <span>C++</span>, <span>Java</span>,
+                        and <span>Python</span>, which I apply in various domains including Internet of Things
+                        (<span>IoT</span>) and
+                        Artificial Intelligence (<span>AI</span>) applications. This gives me a profound understanding
+                        of future tech
+                        and how it can be applied to enhance people’s lives.
+                        <br>
+                        I'm always ready for new challenges and eager to contribute to innovative tech projects.
+                        Software development isn't just my career; it's my passion, and I'm constantly striving to
+                        improve and develop my skills for the ever-evolving world of technology.
+                    </p>
+                </div>
+                <div class="about-img">
+                    <div class="img-container">
+                        <img loading="lazy" class="img-circle" src="images/ziad-hassan.jpg" alt="">
+                    </div>
+                    <div class="info-contact">
+                        <div class="btn-dw">
+                            <a href="images/ziad Hassan.pdf" class="download-cv" download>download cv</a>
+                        </div>
+                        <div class="social">
+                            <a href='https://www.linkedin.com/in/ziad-h-abaza-8220bb28a'><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href='https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX'><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://wa.me/+201006403927"><i class="fab fa-whatsapp"></i></a>
+                            <a href='https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg=='><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href='https://github.com/Ziad-Abaza'><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills " id="skills">
+            <h2 class="skills-title">Our <span>skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-content" id="skills-content-1"></div>
+                <div class="skills-content" id="skills-content-2"></div>
+            </div>
+        </section>
+        <section class="gallery " id="gallery">
+            <div class="container-gallery">
+                <h2>our <span>gallery</span></h2>
+                <div class="gallery-box">
+                    <!-- <img loading="lazy" src="images/gallery/president-2.jpg" alt="My meeting with the President of the Republic"> -->
+                    <img loading="lazy" src="images/gallery/president-3.jpg" alt="My meeting with the President of the Republic">
+                    <img loading="lazy" src="images/gallery/department.JPG" alt="Head and Vice President of the IT Department">
+                    <img loading="lazy" src="images/gallery/myHonour.jpg" alt="After winning 3 places among the top 10 projects (2, 3, 4)">
+                    <img loading="lazy" src="images/gallery/wazer.jpg"
+                        alt="I had the honor of meeting the Minister of Higher Education during his visit to the IT Project Exhibition, where we discussed ways to develop scientific research and support innovation in the field of technology.">
+                    <img loading="lazy" src="images/gallery/website.jpg"
+                        alt="After successfully creating the university's official website">
+                    <img loading="lazy" src="images/gallery/certificate.jpg" alt="Workshop certificate from Silicon Oasis">
+                </div>
+            </div>
+        </section>
+        <section class="portfolio " id="portfolio">
+            <div class="container-products">
+                <h2>our <span>portfolio</span></h2>
+                <div class="btn-products">
+                    <button id="all">all</button>
+                    <button id="iot">iot</button>
+                    <button id="web">web</button>
+                    <button id="app">app</button>
+                </div>
+                <div class="products-box">
+                    <!-- project 1 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/cruds.png" data-category="web" alt="cruds">
+                        <a href="https://ziad-abaza.github.io/GRUDS/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 2 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/dashboard.png" data-category="web" alt="dashboard">
+                        <a href="https://ziad-abaza.github.io/dashboard-1/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 3 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/FETCHREBOS-1.png" data-category="web" alt="FETCH REBOS">
+                        <a href="https://ziad-abaza.github.io/fetchRebos/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 4 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/OBJECT-QUESTIIONS.png" data-category="web" alt="OBJECT QUESTIIONS">
+                        <a href="https://ziad-abaza.github.io/object-Questiions/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 5 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/SPACIAL-DESIGN.png" data-category="web" alt="SPACIAL DESIGN">
+                        <a href="https://ziad-abaza.github.io/Spacial-Design/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 6 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/armCar.jpg" data-category="iot" alt="arm car">
+                        <a href="project.html?project=arm_car" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 7 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/lineCar.jpg" data-category="iot" alt="line car">
+                        <a href="project.html?project=line_car" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 8 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/parking.jpg" data-category="iot" alt="parking">
+                        <a href="project.html?project=get_parking" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 9 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/article.png" data-category="web" alt="article">
+                        <a href="https://ziad-abaza.github.io/article/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 10 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/itclub-media.png" data-category="web" alt="it club social media">
+                        <a href="https://ziad-abaza.github.io/it-club-socialMedia/"
+                            class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 11 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/event-2.jpeg" data-category="web" alt="it club social media">
+                        <a href="https://ziad-abaza.github.io/event-it/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 12 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/event-1.jpeg" data-category="web" alt="it club social media">
+                        <a href="https://ziad-abaza.github.io/firs-event/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 13 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/it-club.jpeg" data-category="web" alt="it club social media">
+                        <a href="https://ziad-abaza.github.io/it-club-site/" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 14 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/college.jpeg" data-category="web" alt="it club social media">
+                        <a href="" class="product-link"><span>View</span></a>
+                    </div>
+                    <!-- project 15 -->
+                    <div class="hover-box">
+                        <img loading="lazy" src="images/project/projecr-web.jpeg" data-category="web" alt="it club social media">
+                        <a href="" class="product-link"><span>View</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="contact-title">contact <span>me</span></h2>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:zeyad.h.abaza@gmail.com">
+                        <h3>Email</h3>
+                        <p>zeyad.h.abaza@gmail.com</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+201006403927">
+                        <h3>Phone</h3>
+                        <p>+201006403927</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Ziad-Abaza" target="_blank">
+                        <h3>GitHub</h3>
+                        <p>Ziad Abaza</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/ziad-h-abaza-8220bb28a" target="_blank">
+                        <h3>LinkedIn</h3>
+                        <p>Ziad H. Abaza</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX" target="_blank">
+                        <h3>Facebook</h3>
+                        <p>Ziad H. Abaza</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                        <h3>Instagram</h3>
+                        <p>Ziad H. Abaza</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social">
+                <a href='https://www.linkedin.com/in/ziad-h-abaza-8220bb28a'><i class="fab fa-linkedin"></i></a>
+                <a href='https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX'><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/+201006403927"><i class="fab fa-whatsapp"></i></a>
+                <a href='https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg=='><i class="fab fa-instagram"></i></a>
+                <a href='https://github.com/Ziad-Abaza'><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>Designed and Developed by Ziad H. Abaza</p>
+                <p>&copy; All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
