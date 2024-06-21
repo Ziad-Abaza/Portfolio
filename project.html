@@ -4,87 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/master.css">
-    <script src="js/master.js"></script>
-    <title>portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-
-    <!-- Header Section -->
-    <div class="iot-page">
-        <div class="overlay"></div>
-
-        <!-- Header Area -->
-        <div class="header-area">
-            <div class="header-brand">
-                <div class="brand-img"><img loading="lazy" src="images/ziad-hassan-header.jpg" alt=""></div>
-                <a href="index.html" class="logo">portfol<span>io</span></a>
+    <header>
+        <div class="brand">
+            <!-- <div class="brand-img">
+                <img class="img img-circle" src="images/ziad-hassan-header.jpg" alt="my picture">
+            </div> -->
+            <div class="brand-title">
+                Portfolio
             </div>
-            <ul class="links menu">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+        </div>
+        <nav class="quick-access-links">
+            <button class="burger-menu-btn" aria-label="Toggle Navigation Menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
+        </nav>
+    </header>
+    <!-- show Section -->
+    <div class="product-iot">
+        <!-- project 1 -->
+        <div class="iot-container" id="armCar">
+            <img loading="lazy" src="images/project/armCar-4.jpg" alt="Robotic arm car" class="show-pr-img">
+            <h3>Robotic arm car</h3>
+            <hr>
+            <p>
+                Robotics and remote control technology are integrated into this project. It is designed for
+                hazardous environments and hard-to-reach areas. The car is equipped with a remote control system
+                capable of dealing with objects in the surrounding environment
+            </p>
+            <div class="show-pr-img-container">
+                <img loading="lazy" src="images/project/armCar-1.JPG" alt="Arm Car">
+                <img loading="lazy" src="images/project/armCar-2.JPG" alt="Arm Car">
+                <img loading="lazy" src="images/project/armCar-3.JPG" alt="Arm Car">
+            </div>
+            <video src="images/project/armCar.mp4" controls></video>
         </div>
-
-        <!-- show Section -->
-        <div class="product-iot">
-            <!-- project 1 -->
-            <div class="iot-container" id="armCar">
-                <img loading="lazy" src="images/project/armCar-4.jpg" alt="Robotic arm car" class="show-pr-img">
-                <h3>Robotic arm car</h3>
-                <hr>
-                <p>
-                    Robotics and remote control technology are integrated into this project. It is designed for
-                    hazardous environments and hard-to-reach areas. The car is equipped with a remote control system
-                    capable of dealing with objects in the surrounding environment
-                </p>
-                <div class="show-pr-img-container">
-                    <img loading="lazy" src="images/project/armCar-1.JPG" alt="Arm Car">
-                    <img loading="lazy" src="images/project/armCar-2.JPG" alt="Arm Car">
-                    <img loading="lazy" src="images/project/armCar-3.JPG" alt="Arm Car">
-                </div>
-                <video src="images/project/armCar.mp4" controls></video>
+        <!-- project 2 -->
+        <div class="iot-container" id="lineCar">
+            <img loading="lazy" src="images/project/lineCar-2.jpg" alt="line following car" class="show-pr-img">
+            <h3>line following car</h3>
+            <hr>
+            <p>
+                The "Line Following" car is a smart vehicle equipped with infrared (IR) and ultrasonic sensors, and
+                it excels at automatically following predefined lines. It has been designed to move according to
+                lines on the ground, enabling it to navigate environments such as tracks or designated roads. </p>
+            <div class="show-pr-img-container">
+                <img loading="lazy" src="images/project/lineCar.jpg" alt="line following car">
+                <img loading="lazy" src="images/project/lineCar-1.jpg" alt="line following car">
             </div>
-            <!-- project 2 -->
-            <div class="iot-container" id="lineCar">
-                <img loading="lazy" src="images/project/lineCar-2.jpg" alt="line following car" class="show-pr-img">
-                <h3>line following car</h3>
-                <hr>
-                <p>
-                    The "Line Following" car is a smart vehicle equipped with infrared (IR) and ultrasonic sensors, and
-                    it excels at automatically following predefined lines. It has been designed to move according to
-                    lines on the ground, enabling it to navigate environments such as tracks or designated roads. </p>
-                <div class="show-pr-img-container">
-                    <img loading="lazy" src="images/project/lineCar.jpg" alt="line following car">
-                    <img loading="lazy" src="images/project/lineCar-1.jpg" alt="line following car">
-                </div>
-                <video src="images/project/lineCar.mp4" controls></video>
-            </div>
-            <!-- project 3 -->
-            <div class="iot-container" id="set_parking">
-                <img loading="lazy" src="images/project/parking-3.jpg" alt="parking" class="show-pr-img">
-                <h3>multi-level car garage</h3>
-                <hr>
-                <p>
-                    The multi-level car garage project is a unique and practical design aimed at accommodating and
-                    storing many cars in a limited space. The project consists of multiple integrated floors, where cars
-                    are parked in their designated areas on each level. </p>
-                <div class="show-pr-img-container">
-                    <img loading="lazy" src="images/project/parking-1.jpg" alt="parking">
-                    <img loading="lazy" src="images/project/parking-2.jpg" alt="parking">
-                </div>
-                <video src="images/project/parking.mp4" controls></video>
-            </div>
+            <video src="images/project/lineCar.mp4" controls></video>
         </div>
+        <!-- project 3 -->
+        <div class="iot-container" id="set_parking">
+            <img loading="lazy" src="images/project/parking-3.jpg" alt="parking" class="show-pr-img">
+            <h3>multi-level car garage</h3>
+            <hr>
+            <p>
+                The multi-level car garage project is a unique and practical design aimed at accommodating and
+                storing many cars in a limited space. The project consists of multiple integrated floors, where cars
+                are parked in their designated areas on each level. </p>
+            <div class="show-pr-img-container">
+                <img loading="lazy" src="images/project/parking-1.jpg" alt="parking">
+                <img loading="lazy" src="images/project/parking-2.jpg" alt="parking">
+            </div>
+            <video src="images/project/parking.mp4" controls></video>
+        </div>
+    </div>
     </div>
     <div class="btn-back">
         <a href="index.html" class="btn-back-content">
@@ -95,7 +95,52 @@
             <span class="btn-circle5"></span>
             <span class="btn-back-text">Back to Home</span>
         </a>
-    </div>        
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social">
+                <a href='https://www.linkedin.com/in/ziad-h-abaza-8220bb28a'><i class="fab fa-linkedin"></i></a>
+                <a href='https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX'><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/+201006403927"><i class="fab fa-whatsapp"></i></a>
+                <a href='https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg=='><i class="fab fa-instagram"></i></a>
+                <a href='https://github.com/Ziad-Abaza'><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>Designed and Developed by Ziad H. Abaza</p>
+                <p>&copy; All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        ////////////////////////////////////////////
+        // Section 5: Get and Show Product From URL
+        ////////////////////////////////////////////
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const activateArmCar = urlParams.get("project");
+
+            if (activateArmCar !== null) {
+                if (activateArmCar === "arm_car") {
+                    const setArmCar = document.getElementById("armCar");
+                    if (setArmCar) {
+                        setArmCar.classList.add("active");
+                    }
+                } else if (activateArmCar === "line_car") {
+                    const setLineCar = document.getElementById("lineCar");
+                    if (setLineCar) {
+                        setLineCar.classList.add("active");
+                    }
+                } else if (activateArmCar === "get_parking") {
+                    const setParking = document.getElementById("set_parking");
+                    if (setParking) {
+                        setParking.classList.add("active");
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

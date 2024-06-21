@@ -535,8 +535,8 @@ header {
 .product-link {
   opacity: 0;
   visibility: hidden;
-  color: var(--color-4);
-  font-size: var(--font-size-18);
+  color: var(--accent-color);
+  font-size: 18px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -662,6 +662,147 @@ footer {
     font-size: 14px;
 }
 
+
+/*************************** product iot page ****************************/
+.product-iot{
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  min-height: 260vh;
+  text-align: center;
+  border-radius: 7px;
+  margin-top: 45px !important;
+  padding: 20px 0;
+  margin: auto;
+  position: relative;
+}
+.iot-container{
+  position: absolute;
+  display: none;
+}
+.iot-container.active{
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+.iot-container .show-pr-img{
+  width: 40%;
+  margin: auto;
+  border-radius: 50%;
+  border: var(--accent-color);
+  animation: retotImg infinite 20s;
+  box-shadow: 2px 2px 12px #123;
+  padding: 5px;
+}
+@keyframes retotImg{
+  from{transform: rotateY(0deg);}
+  to{transform:rotateY(360deg);}
+  
+}
+.iot-container h3{
+  margin: 15px;
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 500;
+}
+.iot-container hr{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 16px;
+  background-color: var(--accent-color);
+  border: none;
+  height: 3px;}
+.iot-container p{
+  color: var(--primary-color);
+  font-size: 18px;
+  width: 80%;
+  margin: 15px auto;
+}
+.iot-container .show-pr-img-container{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.iot-container .show-pr-img-container img{
+  border-radius: 5px;
+  border: 2px solid var(--accent-color);
+  width:  300px;
+}
+.iot-container video{
+  width: 80%;
+  max-width: 800px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-back-content {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  padding: 1em 2em;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-back{
+  width: 100%;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.btn-back-content span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transition: .6s ease;
+  }
+  
+  .btn-back-content span:nth-child(6) {
+      position: relative;
+  }
+  
+  .btn-back-content span:nth-child(1) {
+      transform: translate(-3.3em, -4em);
+  }
+  
+  .btn-back-content span:nth-child(2) {
+      transform: translate(-6em, 1.3em);
+  }
+  
+  .btn-back-content span:nth-child(3) {
+      transform: translate(-.2em, 1.8em);
+  }
+  
+  .btn-back-content span:nth-child(4) {
+      transform: translate(3.5em, 1.4em);
+  }
+  
+  .btn-back-content span:nth-child(5) {
+      transform: translate(3.5em, -3.8em);
+  }
+  
+  .btn-back-content:hover span:not(:nth-child(6)) {
+      transform: translate(-50%, -50%) scale(4);
+      transition: 1.5s ease;
+  }
+
+
 @media (max-width: 768px) {
   .quick-access-links ul {
     display: none;
@@ -753,5 +894,7 @@ footer {
   .slide-text p {
     margin-top: 20px;
   }
+  .product-iot {
+    min-height: 180vh;
 }
-
+}
