@@ -159,6 +159,9 @@ header {
   height: 100%;
   object-fit: cover;
 }
+.all-thumbnail{
+  height: 100%;
+}
 .thumbnail.item-1,
 .thumbnail.item-2,
 .thumbnail.item-3 {
@@ -177,7 +180,7 @@ header {
   opacity: 1;
   border: var(--border);
   transition: 0.4s ease all;
-  width: 60px;
+  width: 50px;
 }
 .slide-text {
   position: absolute;
@@ -218,8 +221,11 @@ header {
 .about-text {
   width: 50%;
   width: 50%;
-  text-align: justify;
+  text-align: start;
   color: var(--text-color);
+}
+.about-text h2{
+  margin-bottom: 20px;
 }
 .about-text span {
   color: var(--accent-color);
@@ -408,7 +414,7 @@ header {
   z-index: 9;
 }
 .popup-box {
-  width: 40%;
+  width: 90%;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -435,8 +441,8 @@ header {
 .popup-close {
   position: absolute;
   text-align: center;
-  top: -20px;
-  right: -20px;
+  top: -10px;
+  right: 0px;
   cursor: pointer;
   font-size: 28px;
   font-weight: bolder;
@@ -472,6 +478,11 @@ header {
 }
 .btn-products {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .btn-products button {
   font-size: 18px;
@@ -656,7 +667,7 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 90px;
+    top: 35px;
     left: 0;
     background-color: #242424;
     width: 100%;
@@ -728,10 +739,13 @@ footer {
   .slide-text.main {
     top: 10vh;
   }
+  .all-thumbnail{
+    width: 93%;
+  }
 }
 @media (max-width: 380px) {
   .slide-text.main {
-    top: 10px;
+    top: 50px;
   }
   .slide-text h3 {
     font-size: 1.5rem;
