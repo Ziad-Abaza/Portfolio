@@ -161,7 +161,7 @@ galleryImages.forEach((img) => {
 const allBtn = document.getElementById("all");
 const iotBtn = document.getElementById("iot");
 const webBtn = document.getElementById("web");
-const appBtn = document.getElementById("app");
+// const appBtn = document.getElementById("app");
 
 const products = document.querySelectorAll(".products-box img");
 
@@ -169,7 +169,7 @@ if (allBtn !== null) {
   allBtn.addEventListener("click", () => filterProducts("all"));
   iotBtn.addEventListener("click", () => filterProducts("iot"));
   webBtn.addEventListener("click", () => filterProducts("web"));
-  appBtn.addEventListener("click", () => filterProducts("app"));
+  // appBtn.addEventListener("click", () => filterProducts("app"));
 }
 
 function filterProducts(category) {
@@ -182,5 +182,3 @@ function filterProducts(category) {
     }
   });
 }
-
-
