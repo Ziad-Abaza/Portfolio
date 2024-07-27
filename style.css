@@ -1024,6 +1024,9 @@ align-items: center;
     .gallery .gallery-box img{
       width: 90%;
     }
+    .skills .skills-box {
+      width: 100%;
+    }
 }
 @media (max-width: 380px) {
   /* .slide-text.main {
