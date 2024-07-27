@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <header>
+ <header>
         <div class="brand">
-            <!-- <div class="brand-img">
+            <div class="brand-img">
                 <img class="img img-circle" src="images/ziad-hassan-header.jpg" alt="my picture">
-            </div> -->
+            </div>
             <div class="brand-title">
-                Portfolio
+                Ziad H.Abaza
             </div>
         </div>
         <nav class="quick-access-links">
@@ -27,11 +27,11 @@
                 <span></span>
             </button>
             <ul>
-                <li><a href="#about">about me</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="/#about">about me</a></li>
+                <li><a href="/#skills">skills</a></li>
+                <li><a href="/#gallery">gallery</a></li>
+                <li><a href="/#portfolio">portfolio</a></li>
+                <li><a href="/#contact">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -84,6 +84,20 @@
             </div>
             <video src="images/project/parking.mp4" controls></video>
         </div>
+        <!-- project 4 -->
+        <div class="iot-container" id="sm_city">
+            <img loading="lazy" src="images/project/sm_city-4.jpg" alt="parking" class="show-pr-img">
+            <h3>Smart City</h3>
+            <hr>
+            <p>
+                Our project is to develop a fully autonomous Smart City. This smart city aims to provide a comfortable and safe living environment for its residents by utilizing the latest technologies in Artificial Intelligence (AI) and Automation. The city offers an integrated environment where all systems communicate with each other seamlessly and efficiently, ensuring the highest levels of performance and sustainability while conserving energy and protecting the environment.
+            </p>
+            <div class="show-pr-img-container">
+                <img loading="lazy" src="images/project/sm_city-1.jpg" alt="parking">
+                <img loading="lazy" src="images/project/sm_city-2.jpg" alt="parking">
+                <img loading="lazy" src="images/project/sm_city-3.jpg" alt="parking">
+            </div>
+        </div>
     </div>
     </div>
     <div class="btn-back">
@@ -134,6 +148,11 @@
                     }
                 } else if (activateArmCar === "get_parking") {
                     const setParking = document.getElementById("set_parking");
+                    if (setParking) {
+                        setParking.classList.add("active");
+                    }
+                } else if (activateArmCar === "sm_city") {
+                    const setParking = document.getElementById("sm_city");
                     if (setParking) {
                         setParking.classList.add("active");
                     }
