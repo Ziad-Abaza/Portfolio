@@ -168,7 +168,7 @@ header {
 .slider {
   margin-top: 30px;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 85px);
 }
 .slider-container {
   grid-template-rows: auto 50px;
