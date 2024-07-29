@@ -67,7 +67,6 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 2px 2px 8px #ddd, 0px 0px 8px #222;
 }
 .section-title {
   color: var(--accent-color_2) !important;
