@@ -25,6 +25,7 @@
   margin: 0%;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-family);
 }
 *::before,
 *::after {
@@ -421,73 +422,69 @@ header {
 }
 
 /*************************** skills ****************************/
-
 .skills {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* height: 200px; */
-}
-.skills .container-skills {
-  width: 90%;
-  margin: auto;
-  color: var(--primary-color);
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.skills .container-skills h2 {
-  text-align: center;
-  margin-bottom: 20px;
+.container-skills {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
 }
 
-.skills .skills-box {
-  width: 90%;
-  margin: auto;
-  color: var(--accent-color_1);
-  background-color: var(--background-sub-color);
-  padding: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.skills .skills-box .skill-name {
-  text-align: center;
-  width: 30%;
-  font-weight: bold;
+.skills-item {
+    background-color: var(--background-sub-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    animation: fadeInUp 1s ease-out;
 }
 
-.skills .skills-box .skill-progress {
-  width: 100%;
-  background-color: var(--secondary-color);
-  position: relative;
-  border-radius: 12px;
+.skills-item .skill-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.skills .skills-box .skill-progress span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: var(--accent-color_1);
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
+.skill-progress {
+    background-color: #e4e4e4;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
 }
+
+.progress-bar {
+    background-color: var(--accent-color_1);
+    height: 8px;
+    border-radius: 8px;
+    width: 0;
+    transition: width 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*************************** gallery ****************************/
 .gallery {
   width: 100%;

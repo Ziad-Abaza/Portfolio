@@ -69,29 +69,30 @@ updateThumbnails();
 ////////////////////////////////////////////
 // Section 3: Skills Content
 ////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const skillProgressBars = document.querySelectorAll(".progress-bar");
 
-const skillProgressBars = document.querySelectorAll(".skill-progress span");
-
-function animateProgressBar() {
-    skillProgressBars.forEach(progressBar => {
-        const progress = progressBar.getAttribute("data-progress");
-        progressBar.style.width = progress; 
+  function animateProgressBar() {
+    skillProgressBars.forEach((progressBar) => {
+      const progress = progressBar.getAttribute("data-progress");
+      progressBar.style.width = progress;
     });
-}
+  }
 
-window.addEventListener("scroll", function () {
+  function checkScroll() {
     const skillsSection = document.querySelector(".skills");
-    
-    const skillsSectionTop = skillsSection.offsetTop;
-    
+    const skillsSectionTop = skillsSection.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
-    
-    const scrollY = window.scrollY;
 
-    if (scrollY > skillsSectionTop - windowHeight / 2) {
-        animateProgressBar();
+    if (skillsSectionTop < windowHeight / 1.5) {
+      animateProgressBar();
+      window.removeEventListener("scroll", checkScroll);
     }
+  }
+
+  window.addEventListener("scroll", checkScroll);
 });
+
 
 ////////////////////////////////////////////
 // Section 4: Gallery Popup
