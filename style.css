@@ -792,6 +792,9 @@ footer {
   }
 }
 @media (max-width: 480px) {
+  .brand-title{
+    font-size: 1.5rem;
+  }
   .all-thumbnail {
     width: 93%;
   }
@@ -805,6 +808,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .portfolio{
+    padding: 0.5em;
+    width: 100%;
   }
 }
 
