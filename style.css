@@ -276,17 +276,20 @@ header {
 }
 
  .about .btn-dw {
-    width: 170px;
-    padding: 6px 0px;
-    background-color: var(--accent-color_1);
-    border-radius: 14px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    position: relative;
-    transition: 0.3s;
-    border: 2px solid transparent
+  width: 170px;
+  padding: 5px 15px;
+  background-color: var(--accent-color_1);
+  border-radius: 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  /* box-shadow: 2px 2px 12px #123; */
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  position: relative;
+  border: none;
+  transition-duration: 0.2s;
 }
 
 .about .btn-dw::after,
