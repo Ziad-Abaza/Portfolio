@@ -816,6 +816,13 @@ footer {
     padding: 0.5em;
     width: 100%;
   }
+  .project-gallery img {
+    max-width: 100%;
+    min-width: 280px;
+    width: 100% !important;
+    border-radius: 5px;
+    margin: auto;
+}
 }
 
 
@@ -880,8 +887,10 @@ footer {
 
 .project-gallery img {
     max-width: 100%;
+    min-width: 280px;
     width: calc(33.333% - 10px);
     border-radius: 5px;
+    margin: auto;
 }
 
 .project-video {
