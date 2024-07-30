@@ -740,7 +740,7 @@ footer {
     position: absolute;
     top: 69px;
     left: 0;
-    background-color: #242424;
+    background-color: var(--background-sub-color);
     width: 100%;
     padding: 10px;
     z-index: 9999;
