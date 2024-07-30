@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Project Details</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
- <header>
+    <header data-aos="fade-up">
         <div class="brand">
             <div class="brand-img">
                 <img class="img img-circle" src="images/ziad-hassan-header.jpg" alt="my picture">
@@ -29,136 +27,142 @@
             <ul>
                 <li><a href="/#about">about me</a></li>
                 <li><a href="/#skills">expertise</a></li>
-                <li><a href="/#gallery">gallery</a></li>
+                <!-- <li><a href="#gallery">gallery</a></li> -->
+                <li><a href="/#timeline">journey</a></li>
                 <li><a href="/#portfolio">portfolio</a></li>
-                <li><a href="/#contact">contact</a></li>
+                <!-- <li><a href="#contact">contact</a></li> -->
             </ul>
         </nav>
     </header>
-    <!-- show Section -->
-    <div class="product-iot">
-        <!-- project 1 -->
-        <div class="iot-container" id="armCar">
-            <img loading="lazy" src="images/project/armCar-4.jpg" alt="Robotic arm car" class="show-pr-img">
-            <h3>Robotic arm car</h3>
-            <hr>
-            <p>
-                Robotics and remote control technology are integrated into this project. It is designed for
-                hazardous environments and hard-to-reach areas. The car is equipped with a remote control system
-                capable of dealing with objects in the surrounding environment
-            </p>
-            <div class="show-pr-img-container">
-                <img loading="lazy" src="images/project/armCar-1.JPG" alt="Arm Car">
-                <img loading="lazy" src="images/project/armCar-2.JPG" alt="Arm Car">
-                <img loading="lazy" src="images/project/armCar-3.JPG" alt="Arm Car">
+    <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-delay="200">
+        <div class="container-project">
+            <h2 class="section-title">Project <span>Details</span></h2>
+            <div class="project-main">
+                <img src="" alt="Project Main Image" class="project-main-image" id="main-image">
+                <div class="project-info">
+                    <h3 id="project-title">Project Title</h3>
+                    <p id="project-description">Project Description</p>
+                </div>
             </div>
-            <video src="images/project/armCar.mp4" controls></video>
-        </div>
-        <!-- project 2 -->
-        <div class="iot-container" id="lineCar">
-            <img loading="lazy" src="images/project/lineCar-2.jpg" alt="line following car" class="show-pr-img">
-            <h3>line following car</h3>
-            <hr>
-            <p>
-                The "Line Following" car is a smart vehicle equipped with infrared (IR) and ultrasonic sensors, and
-                it excels at automatically following predefined lines. It has been designed to move according to
-                lines on the ground, enabling it to navigate environments such as tracks or designated roads. </p>
-            <div class="show-pr-img-container">
-                <img loading="lazy" src="images/project/lineCar.jpg" alt="line following car">
-                <img loading="lazy" src="images/project/lineCar-1.jpg" alt="line following car">
-            </div>
-            <video src="images/project/lineCar.mp4" controls></video>
-        </div>
-        <!-- project 3 -->
-        <div class="iot-container" id="set_parking">
-            <img loading="lazy" src="images/project/parking-3.jpg" alt="parking" class="show-pr-img">
-            <h3>multi-level car garage</h3>
-            <hr>
-            <p>
-                The multi-level car garage project is a unique and practical design aimed at accommodating and
-                storing many cars in a limited space. The project consists of multiple integrated floors, where cars
-                are parked in their designated areas on each level. </p>
-            <div class="show-pr-img-container">
-                <img loading="lazy" src="images/project/parking-1.jpg" alt="parking">
-                <img loading="lazy" src="images/project/parking-2.jpg" alt="parking">
-            </div>
-            <video src="images/project/parking.mp4" controls></video>
-        </div>
-        <!-- project 4 -->
-        <div class="iot-container" id="sm_city">
-            <img loading="lazy" src="images/project/sm_city-4.jpg" alt="parking" class="show-pr-img">
-            <h3>Smart City</h3>
-            <hr>
-            <p>
-                Our project is to develop a fully autonomous Smart City. This smart city aims to provide a comfortable and safe living environment for its residents by utilizing the latest technologies in Artificial Intelligence (AI) and Automation. The city offers an integrated environment where all systems communicate with each other seamlessly and efficiently, ensuring the highest levels of performance and sustainability while conserving energy and protecting the environment.
-            </p>
-            <div class="show-pr-img-container">
-                <img loading="lazy" src="images/project/sm_city-1.jpg" alt="parking">
-                <img loading="lazy" src="images/project/sm_city-2.jpg" alt="parking">
-                <img loading="lazy" src="images/project/sm_city-3.jpg" alt="parking">
+            <div class="project-media">
+                <div class="project-section-title">
+                    <h3>Gallery</h3>
+                </div>
+                <div class="project-gallery" id="project-gallery">
+                    <!-- Gallery images will be inserted here -->
+                </div>
+                <div class="project-section-title">
+                    <h3>Video</h3>
+                </div>
+                <div class="project-video">
+                    <video controls id="project-video">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="btn-back">
-        <a href="index.html" class="btn-back-content">
-            <span class="btn-circle1"></span>
-            <span class="btn-circle2"></span>
-            <span class="btn-circle3"></span>
-            <span class="btn-circle4"></span>
-            <span class="btn-circle5"></span>
-            <span class="btn-back-text">Back to Home</span>
-        </a>
-    </div>
+        <div class="btn-back">
+            <a href="index.html" class="btn-back-content">
+                <span class="btn-circle1"></span>
+                <span class="btn-circle2"></span>
+                <span class="btn-circle3"></span>
+                <span class="btn-circle4"></span>
+                <span class="btn-circle5"></span>
+                <span class="btn-back-text">Back to Home</span>
+            </a>
+        </div>
+    </section>
     <footer>
-        <div class="footer-container">
-            <div class="social">
-                <a href='https://www.linkedin.com/in/ziad-h-abaza-8220bb28a'><i class="fab fa-linkedin"></i></a>
-                <a href='https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX'><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/+201006403927"><i class="fab fa-whatsapp"></i></a>
-                <a href='https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg=='><i class="fab fa-instagram"></i></a>
-                <a href='https://github.com/Ziad-Abaza'><i class="fab fa-github"></i></a>
-            </div>
+        <div class="footer-container " data-aos="fade-up" data-aos-delay="200">
+            <!-- <div class="social">
+                            <a href='https://www.linkedin.com/in/ziad-h-abaza-8220bb28a'><i class="fab fa-linkedin"></i></a>
+                            <a href='https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX'><i class="fab fa-facebook"></i></a>
+                            <a href="https://wa.me/+201006403927"><i class="fab fa-whatsapp"></i></a>
+                            <a href='https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg=='><i class="fab fa-instagram"></i></a>
+                            <a href='https://github.com/Ziad-Abaza'><i class="fab fa-github"></i></a>
+                        </div> -->
             <div class="footer-info">
                 <p>Designed and Developed by Ziad H. Abaza</p>
                 <p>&copy; All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
     <script>
-        ////////////////////////////////////////////
-        // Section 5: Get and Show Product From URL
-        ////////////////////////////////////////////
-        document.addEventListener("DOMContentLoaded", () => {
-            const urlParams = new URLSearchParams(window.location.search);
+        document.addEventListener('DOMContentLoaded', () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const project = urlParams.get('project');
 
-            const activateArmCar = urlParams.get("project");
+                const projects = {
+                    arm_car: {
+                        title: "Robotic Arm Car",
+                        description: "Robotics and remote control technology are integrated into this project. It is designed for hazardous environments and hard-to-reach areas. The car is equipped with a remote control system capable of dealing with objects in the surrounding environment.",
+                        mainImage: "images/project/armCar-1.JPG",
+                        images: [
+                            "images/project/armCar-2.JPG",
+                            "images/project/armCar-3.jpg",
+                            "images/project/armCar-4.jpg"
+                        ],
+                        video: "images/project/armCar.mp4"
+                    },
+                    line_car: {
+                        title: "Line Following Car",
+                        description: "The 'Line Following' car is a smart vehicle equipped with infrared (IR) and ultrasonic sensors, and it excels at automatically following predefined lines. It has been designed to move according to lines on the ground, enabling it to navigate environments such as tracks or designated roads.",
+                        mainImage: "images/project/lineCar-2.jpg",
+                        images: [
+                            "images/project/lineCar.jpg",
+                            "images/project/lineCar-1.jpg"
+                        ],
+                        video: "images/project/lineCar.mp4"
+                    },
+                    get_parking: {
+                        title: "Multi-Level Car Garage",
+                        description: "The multi-level car garage project is a unique and practical design aimed at accommodating and storing many cars in a limited space. The project consists of multiple integrated floors, where cars are parked in their designated areas on each level.",
+                        mainImage: "images/project/parking-3.jpg",
+                        images: [
+                            "images/project/parking-1.jpg",
+                            "images/project/parking-2.jpg"
+                        ],
+                        video: "images/project/parking.mp4"
+                    },
+                    sm_city: {
+                        title: "Smart City",
+                        description: "Our project is to develop a fully autonomous Smart City. This smart city aims to provide a comfortable and safe living environment for its residents by utilizing the latest technologies in Artificial Intelligence (AI) and Automation. The city offers an integrated environment where all systems communicate with each other seamlessly and efficiently, ensuring the highest levels of performance and sustainability while conserving energy and protecting the environment.",
+                        mainImage: "images/project/sm_city-4.jpg",
+                        images: [
+                            "images/project/sm_city-1.jpg",
+                            "images/project/sm_city-2.jpg",
+                            "images/project/sm_city-3.jpg"
+                        ]
+                    }
+                };
 
-            if (activateArmCar !== null) {
-                if (activateArmCar === "arm_car") {
-                    const setArmCar = document.getElementById("armCar");
-                    if (setArmCar) {
-                        setArmCar.classList.add("active");
+                if (project && projects[project]) {
+                    const projectDetails = projects[project];
+                    document.getElementById('project-title').textContent = projectDetails.title;
+                    document.getElementById('project-description').textContent = projectDetails.description;
+                    document.getElementById('main-image').src = projectDetails.mainImage;
+
+                    const gallery = document.getElementById('project-gallery');
+                    projectDetails.images.forEach(image => {
+                        const img = document.createElement('img');
+                        img.src = image;
+                        img.alt = `Project Image`;
+                        gallery.appendChild(img);
+                    });
+
+                    if (projectDetails.video) {
+                        const video = document.getElementById('project-video');
+                        video.src = projectDetails.video;
+                    } else {
+                        document.querySelector('.project-video').style.display = 'none';
                     }
-                } else if (activateArmCar === "line_car") {
-                    const setLineCar = document.getElementById("lineCar");
-                    if (setLineCar) {
-                        setLineCar.classList.add("active");
-                    }
-                } else if (activateArmCar === "get_parking") {
-                    const setParking = document.getElementById("set_parking");
-                    if (setParking) {
-                        setParking.classList.add("active");
-                    }
-                } else if (activateArmCar === "sm_city") {
-                    const setParking = document.getElementById("sm_city");
-                    if (setParking) {
-                        setParking.classList.add("active");
-                    }
+                } else {
+                    document.querySelector('.container-project').innerHTML = '<p>Project not found</p>';
                 }
-            }
-        });
+            });
+
     </script>
 </body>
 

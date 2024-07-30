@@ -69,29 +69,15 @@ updateThumbnails();
 ////////////////////////////////////////////
 // Section 3: Skills Content
 ////////////////////////////////////////////
-document.addEventListener("DOMContentLoaded", function () {
-  const skillProgressBars = document.querySelectorAll(".progress-bar");
+        document.addEventListener('DOMContentLoaded', function () {
+            const skills = document.querySelectorAll('.skill');
 
-  function animateProgressBar() {
-    skillProgressBars.forEach((progressBar) => {
-      const progress = progressBar.getAttribute("data-progress");
-      progressBar.style.width = progress;
-    });
-  }
-
-  function checkScroll() {
-    const skillsSection = document.querySelector(".skills");
-    const skillsSectionTop = skillsSection.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (skillsSectionTop < windowHeight / 1.5) {
-      animateProgressBar();
-      window.removeEventListener("scroll", checkScroll);
-    }
-  }
-
-  window.addEventListener("scroll", checkScroll);
-});
+            skills.forEach(skill => {
+                const percentage = skill.getAttribute('data-percentage');
+                const progress = skill.querySelector('.progress');
+                progress.style.width = `${percentage}%`;
+            });
+        });
 
 
 ////////////////////////////////////////////
@@ -161,33 +147,4 @@ function filterProducts(category) {
     }
   });
 }
-
-////////////////////////////////////////////
-// Animations
-////////////////////////////////////////////
-
-document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".animate-on-scroll");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const element = entry.target;
-          const delay = element.getAttribute("data-animation-delay");
-          element.style.setProperty("--animation-delay", delay);
-          element.style.animationPlayState = "running"; 
-          observer.unobserve(element);
-        }
-      });
-    },
-    {
-      threshold: 0.1, 
-    }
-  );
-
-  elements.forEach((element) => {
-    observer.observe(element);
-  });
-});
 
