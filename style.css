@@ -916,11 +916,11 @@ footer {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  color: var(--accent-color_1) !important;
+  color: var(--accent-color_1) ;
 }
 
-.btn-back-content:hover {
-  color: var(--primary-color) !important;
+.btn-back-content:hover .btn-back-text {
+  color: var(--text-color) !important;
 }
 
 .btn-back {
