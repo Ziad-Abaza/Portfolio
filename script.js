@@ -61,7 +61,7 @@ function currentSlide(index) {
   updateThumbnails();
 }
 
-setInterval(showNextSlide, 7000);
+setInterval(showNextSlide, 15000);
 
 showSlide();
 updateThumbnails();
@@ -69,55 +69,36 @@ updateThumbnails();
 ////////////////////////////////////////////
 // Section 3: Skills Content
 ////////////////////////////////////////////
-        document.addEventListener('DOMContentLoaded', function () {
-            const skills = document.querySelectorAll('.skill');
+document.addEventListener('DOMContentLoaded', function () {
+  const skills = document.querySelectorAll('.skill');
 
-            skills.forEach(skill => {
-                const percentage = skill.getAttribute('data-percentage');
-                const progress = skill.querySelector('.progress');
-                progress.style.width = `${percentage}%`;
-            });
-        });
-
-
-////////////////////////////////////////////
-// Section 4: Gallery Popup
-////////////////////////////////////////////
-const galleryItems = document.querySelectorAll(".gallery-item");
-
-galleryItems.forEach((item) => {
-  item.onclick = function () {
-    const img = this.querySelector("img");
-    const overlay = document.createElement("div");
-    overlay.className = "popup-overlay";
-
-    const popupBox = document.createElement("div");
-    popupBox.classList.add("popup-box");
-
-    const popupImg = document.createElement("img");
-    popupImg.src = img.src;
-    popupBox.appendChild(popupImg);
-
-    document.body.appendChild(overlay);
-    document.body.appendChild(popupBox);
-
-    if (img.alt !== null) {
-      const imgHeading = document.createElement("h3");
-      const imgText = document.createTextNode(img.alt);
-      imgHeading.appendChild(imgText);
-      popupBox.appendChild(imgHeading);
-    }
-
-    const closeButton = document.createElement("span");
-    closeButton.className = "popup-close";
-    closeButton.innerHTML = "&times;";
-    popupBox.appendChild(closeButton);
-
-    closeButton.onclick = function () {
-      document.body.removeChild(overlay);
-      document.body.removeChild(popupBox);
-    };
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
   };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const skill = entry.target;
+        const percentage = skill.getAttribute('data-percentage');
+        const progress = skill.querySelector('.progress');
+        
+        setTimeout(() => {
+          progress.style.width = `${percentage}%`;
+        }, 500);
+
+        observer.unobserve(skill);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  skills.forEach(skill => {
+    observer.observe(skill);
+  });
 });
 
 ////////////////////////////////////////////
