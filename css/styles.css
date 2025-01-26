@@ -44,7 +44,6 @@ a:active {
 }
 
 /*******************  aura wrapper  *******************/
-
 .aura-wrapper {
   position: fixed;
   top: 0;
@@ -53,20 +52,22 @@ a:active {
   height: 100%;
   z-index: 10;
   pointer-events: none;
+  /* backdrop-filter: blur(10px);  */
 }
 
 .aura-circle {
   position: fixed;
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(20px); 
   animation: float 10s infinite alternate ease-in-out;
   background: linear-gradient(135deg,
-      rgba(255, 0, 150, 0.4),
-      rgba(0, 150, 255, 0.4),
-      rgba(150, 255, 0, 0.4));
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-  -webkit-filter: blur(50px);
+      rgba(255, 0, 150, 0.1), 
+      rgba(0, 150, 255, 0.1),
+      rgba(150, 255, 0, 0.1));
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  -webkit-filter: blur(10px); 
   z-index: 11;
+  mix-blend-mode: overlay; 
 }
 
 .aura-circle--large {
@@ -96,7 +97,7 @@ a:active {
   }
 
   100% {
-    transform: translateY(-50px) translateX(50px);
+    transform: translateY(-100px) translateX(100px);
   }
 }
 
@@ -1261,6 +1262,9 @@ a:active {
   padding: 20px;
   box-shadow: 0 0 10px var(--shadow-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
 }
 
 .gh-repo-card:hover {
@@ -1270,20 +1274,21 @@ a:active {
 
 .gh-repo-name {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin: 0;
   color: var(--primary-text-color);
 }
 
 .gh-repo-description {
   font-size: 1rem;
   color: var(--secondary-text-color);
-  margin-bottom: 15px;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .gh-repo-stats {
   display: flex;
   gap: 10px;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 .gh-repo-stats span {
@@ -1291,6 +1296,13 @@ a:active {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.9rem;
+  color: var(--primary-text-color);
+}
+
+.gh-btn-container {
+  display: flex;
+  gap: 10px; 
+  margin-top: auto; 
 }
 
 .gh-btn {
@@ -1300,6 +1312,9 @@ a:active {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  flex: 1; 
+  max-height: 38.4px;
 }
 
 .gh-btn-primary {
@@ -1310,11 +1325,11 @@ a:active {
 .gh-btn-secondary {
   background: var(--liner-color-2);
   color: var(--primary-text-color);
-  margin-left: 10px;
 }
 
 .gh-btn:hover {
   transform: scale(1.05);
+  opacity: 0.9; 
 }
 
 .gh-loading-indicator {

@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Repositories</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="aura-wrapper">
-        <div class="aura-circle aura-circle--large"></div>
-        <div class="aura-circle aura-circle--medium"></div>
-        <div class="aura-circle aura-circle--small"></div>
-    </div>
-
-    <header class="header">
-        <div class="header-container">
-            <div class="brand">
-                <a href="#home" class="brand-link highlight">Ziad Hassan</a>
-            </div>
-            <nav class="nav">
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="repositories.html" class="nav-link active">Repositories</a>
-                    </li>
-                </ul>
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GitHub Repositories</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="aura-wrapper">
+            <div class="aura-circle aura-circle--large"></div>
+            <div class="aura-circle aura-circle--medium"></div>
+            <div class="aura-circle aura-circle--small"></div>
         </div>
-    </header>
-
-    <main class="gh-main">
-        <section id="gh-repositories" class="gh-section">
-            <h1 class="gh-home-title gh-highlight">GitHub Repositories</h1>
-            <div class="gh-repositories-container" id="gh-repositories-container"></div>
-            <div class="gh-loading-indicator" id="gh-loading-indicator">Loading more repositories...</div>
-        </section>
-    </main>
-
-    <script src="js/repositories.js"></script>
-</body>
+        <header class="header">
+            <div class="header-container">
+                <div class="brand">
+                    <a href="index.html" class="brand-link highlight">Ziad Hassan</a>
+                </div>
+                <nav class="nav">
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <ul class="nav-list" style="flex-direction: row-reverse;">
+                        <li class="nav-item">
+                            <a href="#repositories" class="nav-link active">Repositories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="link-move">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="gh-main" id="repositories">
+            <section id="gh-repositories" class="gh-section">
+                <h1 class="gh-home-title gh-highlight">GitHub Repositories</h1>
+                <div class="gh-repositories-container" id="gh-repositories-container"></div>
+                <div class="gh-loading-indicator" id="gh-loading-indicator">Loading more repositories...</div>
+            </section>
+        </main>
+        <script src="js/repositories.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
