@@ -36,7 +36,7 @@ function startSplashScreen() {
       splashScreen.style.opacity = "0";
       splashScreen.style.visibility = "hidden";
     }
-  }, 5000);
+  }, 6000);
 }
 
 // 2. Navigation Functionality
@@ -188,10 +188,53 @@ function setupBackToTopButton() {
   }
 }
 
+// 7. Filter Projects Functionality
+function setupProjectFilter() {
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const projectCards = document.querySelectorAll(".card[data-category]");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+
+            // Remove active class from all buttons and add to the clicked one
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            // Filter projects
+            projectCards.forEach(card => {
+                const category = card.getAttribute("data-category");
+
+                if (filter === "all" || category === filter) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navList = document.querySelector(".nav-list");
+
+  hamburger.addEventListener("click", function () {
+    navList.classList.toggle("active");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".nav") && !event.target.closest(".hamburger")) {
+      navList.classList.remove("active");
+    }
+  });
+});
+
 // Initialize All Functions
 document.addEventListener("DOMContentLoaded", function () {
   startSplashScreen();
   setupNavigation();
   setupPortfolioTabs();
   setupBackToTopButton();
+  setupProjectFilter();
 });
