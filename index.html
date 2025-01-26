@@ -1,438 +1,847 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="aura-wrapper">
+            <div class="aura-circle aura-circle--large"></div>
+            <div class="aura-circle aura-circle--medium"></div>
+            <div class="aura-circle aura-circle--small"></div>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-
-<body>
-    <header data-aos="fade-up">
-        <div class="brand">
-            <div class="brand-img">
-                <img class="img img-circle" src="images/ziad-hassan-header.jpg" alt="my picture">
+        <!-- <div class="splash-screen">
+            <div class="splash-screen-content">
+                <div class="icons-splash">
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <h1 class="splash-screen-title">
+                    <span class="typing-text"></span>
+                    <br>
+                    <span class="highlight typing-text-2"></span>
+                </h1>
             </div>
-            <div class="brand-title">
-                Ziad H.Abaza
+        </div> -->
+        <header class="header">
+            <div class="brand">
+                <a href="#home" class="brand-link highlight">Ziad Hassan</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="home" class="section">
+                <div class="home-content">
+                    <div class="home-text">
+                        <h1 class="home-title">
+                            <span class="highlight">Software Engineer</span>
+                        </h1>
+                        <p class="home-subtitle">
+                            I specialize in building scalable and efficient software solutions.
+                        </p>
+                        <div class="home-skills">
+                            <span>AI & Machine Learning</span>
+                            <span>Embedded System</span>
+                            <span>Database Designer</span>
+                            <span>IoT & Device Integration</span>
+                            <span>Data Analysis & NLP</span>
+                            <span>DevOps & CI/CD</span>
+                            <span>APIs Integration</span>
+                            <span>Problem-Solving & Algorithms</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#Portfolio" class="btn btn-primary">Skills</a>
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                            <a href="#Portfolio" class="btn btn-primary">Projects</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ziad-h-abaza-82276331b" target="_blank" class="social-icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Ziad-Abaza" target="_blank" class="social-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/201006403927" target="_blank" class="social-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-image">
+                        <img src="img/Programming-pana.svg" alt="Code Illustration" class="home-illustration">
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="section">
+                <div class="about-content">
+                    <h1 class="about-title highlight">About Me</h1>
+                    <p class="about-description">
+                        <span class="highlight">Hi, I'm</span>
+                        Ziad Hassan
+                    </p>
+                    <div class="about-details">
+                        <div class="about-section">
+                            <h2 class="about-subtitle">Introduction</h2>
+                            <p>
+                                I’m Ziad Hassan, a Software Engineer with a passion for programming and innovative solutions in web development, IoT, and AI.
+                            </p>
+                        </div>
+                        <div class="about-section">
+                            <h2 class="about-subtitle">Experience</h2>
+                            <p>
+                                Experienced in full-stack development using PHP, Laravel, JavaScript, and more, with skills in database management, APIs, and AI applications.
+                            </p>
+                        </div>
+                        <div class="about-section">
+                            <h2 class="about-subtitle">Academic Focus</h2>
+                            <p>
+                                Studying Information Technology, with a focus on AI and smart city development, including self-driving cars and smart homes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="" class="btn btn-download">Download CV</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ziad-h-abaza-82276331b" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Ziad-Abaza" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/201006403927" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-container">
+                        <div class="profile-background"></div>
+                        <div class="profile-image-wrapper">
+                            <img src="img/ziad-hassan.png" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section">
+                <h1 class="section-title highlight">Portfolio</h1>
+                <div class="portfolio-tabs">
+                  <button class="tab-button active" data-tab="projects">Projects</button>
+                  <button class="tab-button" data-tab="skills">Skills</button>
+                  <button class="tab-button" data-tab="certificates">Certificates</button>
+                </div>
+                <div class="portfolio-content">
+                    <!-- certificates -->
+                    <div id="certificates" class="tab-content">
+                        <div class="grid-container">
+                            <!-- card 1 -->
+                            <div class="card">
+                                <img src="img/certificates/certificate-1.jpg" alt="Certificate 1" class="card-image">
+                                <div class="card-overlay">
+                                    <button class="view-button" onclick="openFullScreen('img/certificates/certificate-1.jpg')">View Full Screen</button>
+                                </div>
+                            </div>
+                            <!-- card 2 -->
+                        </div>
+                    </div>
+                    <!-- Projects Section -->
+                    <div id="projects" class="tab-content active">
+                        <div class="grid-container">
+                            <!-- Project 1: Fetch Repos -->
+                            <div class="card">
+                                <img src="img/projects/fetchRebos.jpeg" alt="Fetch Repos" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/fetchRebos/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Fetch Repos</strong><br>
+                                      A GitHub repository fetcher that allows users to search for repositories by username.<br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript, GitHub API.<br>
+                                      <strong>Features:</strong> Search functionality, responsive design.<br>
+                                      <strong>Challenges:</strong> Handling API rate limits and ensuring smooth user experience.<br>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 2: Dashboard UI -->
+                            <div class="card">
+                                <img src="img/projects/dashboard.png" alt="Dashboard UI" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/beginner-dashboard-ui/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Dashboard UI</strong><br>
+                                      A beginner-friendly dashboard design for managing data and analytics.<br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.<br>
+                                      <strong>Features:</strong> Interactive charts, responsive layout.<br>
+                                      <strong>Challenges:</strong> Ensuring compatibility across different devices.<br>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 3: Exam Grade Calculator -->
+                            <div class="card">
+                                <img src="img/projects/exam-grade.jpg" alt="Exam Grade Calculator" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://www.batugrades.top/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Exam Grade Calculator</strong><br>
+                                      A tool to calculate exam grades based on user input.<br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.<br>
+                                      <strong>Features:</strong> Grade calculation, user-friendly interface.<br>
+                                      <strong>Challenges:</strong> Validating user input and ensuring accurate calculations.<br>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 4: Book Borrowing System -->
+                            <div class="card">
+                                <img src="img/projects/Book.png" alt="Book Borrowing System" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/Book-Borrowing-System-Desktop" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Book Borrowing System</strong><br>
+                                      A desktop application for managing book borrowing in libraries.<br><br>
+                                      <strong>Technologies:</strong> Java, JavaFX, MySQL.<br>
+                                      <strong>Features:</strong> Book management, user authentication.<br>
+                                      <strong>Challenges:</strong> Database design and ensuring data integrity.<br>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 5: IT Projects Exhibition 1 -->
+                            <div class="card">
+                                <img src="img/projects/event-1.jpeg" alt="IT Projects Exhibition 1" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/firs-it-projects-exhibition/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>IT Projects Exhibition 1</strong><br>
+                                      A showcase of IT projects developed by students.<br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.<br>
+                                      <strong>Features:</strong> Project galleries, interactive elements.<br>
+                                      <strong>Challenges:</strong> Organizing and presenting multiple projects effectively.<br>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 6: IT Projects Exhibition 2 -->
+                            <div class="card">
+                                <img src="img/projects/event-2.jpeg" alt="IT Projects Exhibition 2" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/it-projects-exhibition-2/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>IT Projects Exhibition 2</strong><br>
+                                      The second edition of the IT projects showcase, featuring more advanced projects.<br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.<br>
+                                      <strong>Features:</strong> Improved UI/UX, additional project categories.<br>
+                                      <strong>Challenges:</strong> Enhancing user experience and adding new features.<br>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 7: QR Code Generator -->
+                            <div class="card">
+                                <img src="img/projects/qr-code.jpeg" alt="QR Code Generator" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/Generate-QR-Code/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>QR Code Generator:</strong> A tool to generate QR codes.
+                                      <br><br>
+                                      <strong>Description:</strong> This tool allows users to generate QR codes for any text or URL. It provides a simple and intuitive interface for creating and downloading QR codes.
+                                      <br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript, QRCode.js.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Generate QR codes for text or URLs.</li>
+                                          <li>Download QR codes as images.</li>
+                                          <li>Responsive design.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 8: IT Club Website -->
+                            <div class="card">
+                                <img src="img/projects/it-club-site.jpeg" alt="IT Club Website" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/it-club-site/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>IT Club Website:</strong> Official website for the IT club.
+                                      <br><br>
+                                      <strong>Description:</strong> This website serves as the official platform for the IT club, providing information about events, projects, and members.
+                                      <br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Event announcements.</li>
+                                          <li>Project showcases.</li>
+                                          <li>Responsive design.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 9: Library Management System -->
+                            <div class="card">
+                                <img src="img/projects/Library-Mangement-Systm.jpeg" alt="Library Management System" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/Library-Mangement-Systm" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Library Management System:</strong> A system to manage library operations.
+                                      <br><br>
+                                      <strong>Description:</strong> This desktop application helps librarians manage books, borrowers, and borrowing records efficiently.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Java, JavaFX, SQLite.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Add and manage books.</li>
+                                          <li>Track borrowed books.</li>
+                                          <li>User-friendly interface.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 10: Parking Computer Vision -->
+                            <div class="card">
+                                <img src="img/projects/parking-computer-vision.jpeg" alt="Parking Computer Vision" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/parking-computer-vision" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Parking Computer Vision:</strong> A computer vision-based parking system.
+                                      <br><br>
+                                      <strong>Description:</strong> This project uses computer vision techniques to detect available parking spaces in real-time.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Python, OpenCV, TensorFlow.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Real-time parking space detection.</li>
+                                          <li>Integration with IoT devices.</li>
+                                          <li>Scalable architecture.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 11: Lane Detection and Keeping Algorithm -->
+                            <div class="card">
+                                <img src="img/projects/Lane-Detection-and-Keeping-Algorithm.jpeg" alt="Lane Detection and Keeping Algorithm" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/Lane-Detection-and-Keeping-Algorithm" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Lane Detection and Keeping Algorithm:</strong> A system for lane detection in autonomous vehicles.
+                                      <br><br>
+                                      <strong>Description:</strong> This project implements a lane detection algorithm to help autonomous vehicles stay within their lanes.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Python, OpenCV, NumPy.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Real-time lane detection.</li>
+                                          <li>Adaptive to different road conditions.</li>
+                                          <li>High accuracy.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 12: Smart Home Assistant -->
+                            <div class="card">
+                                <img src="img/projects/Smart-Home-Assistant.jpeg" alt="Smart Home Assistant" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/Smart-Home-Assistant" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Smart Home Assistant:</strong> A system for managing smart home devices.
+                                      <br><br>
+                                      <strong>Description:</strong> This project allows users to control and monitor smart home devices through a centralized system.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Python, Flask, MQTT.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Control multiple smart devices.</li>
+                                          <li>Real-time monitoring.</li>
+                                          <li>User-friendly interface.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 13: Spacial Design -->
+                            <div class="card">
+                                <img src="img/projects/Spacial-Design.png" alt="Spacial Design" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/Spacial-Design/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Spacial Design:</strong> A website showcasing spatial design projects.
+                                      <br><br>
+                                      <strong>Description:</strong> This website showcases various spatial design projects, including 3D models and interactive elements.
+                                      <br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript, Three.js.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Interactive 3D models.</li>
+                                          <li>Responsive design.</li>
+                                          <li>Project showcases.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 14: Simple Interactive Quiz -->
+                            <div class="card">
+                                <img src="img/projects/Simple-Interactive-Quiz.jpeg" alt="Simple Interactive Quiz" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/Simple-Interactive-Quiz/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Simple Interactive Quiz:</strong> A fun and interactive quiz application.
+                                      <br><br>
+                                      <strong>Description:</strong> This application allows users to take quizzes on various topics and receive instant feedback.
+                                      <br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Multiple quiz categories.</li>
+                                          <li>Instant feedback.</li>
+                                          <li>Responsive design.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 15: Tic-Tac-Toe AI Comparison -->
+                            <div class="card">
+                                <img src="img/projects/Tic-Tac-Toe-AI-Comparison.png" alt="Tic-Tac-Toe AI Comparison" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/Tic-Tac-Toe-AI-Comparison" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Tic-Tac-Toe AI Comparison:</strong> A project comparing different AI algorithms for Tic-Tac-Toe.
+                                      <br><br>
+                                      <strong>Description:</strong> This project compares the performance of different AI algorithms (e.g., Minimax, Alpha-Beta Pruning) in playing Tic-Tac-Toe.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Python, Pygame.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Multiple AI algorithms.</li>
+                                          <li>Interactive gameplay.</li>
+                                          <li>Performance analysis.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 16: Job Portal Website -->
+                            <div class="card">
+                                <img src="img/projects/job-portal-website.jpg" alt="Job Portal Website" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/EgyTech-Team-Project-PHP" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Job Portal Website:</strong> A platform for job seekers and employers.
+                                      <br><br>
+                                      <strong>Description:</strong> This platform connects job seekers with employers, allowing users to post jobs, upload resumes, and apply for positions.
+                                      <br><br>
+                                      <strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Job posting and searching.</li>
+                                          <li>User profiles for job seekers and employers.</li>
+                                          <li>Responsive design.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 17: Azkar App -->
+                            <div class="card">
+                                <img src="img/projects/azkar.jpeg" alt="Azkar App" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://ziad-abaza.github.io/azkar/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Azkar App:</strong> A web application for Islamic reminders and prayers.
+                                      <br><br>
+                                      <strong>Description:</strong> This app provides daily Islamic reminders, prayers, and supplications (Azkar) for users to stay connected to their faith.
+                                      <br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Daily Azkar and prayers.</li>
+                                          <li>Customizable reminders.</li>
+                                          <li>Responsive design.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 18: College Website -->
+                            <div class="card">
+                                <img src="img/projects/college.jpeg" alt="College Website" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://batechu.com/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>College Website:</strong> Official website for a college.
+                                      <br><br>
+                                      <strong>Description:</strong> This website serves as the official platform for a college, providing information about programs, faculty, and events.
+                                      <br><br>
+                                      <strong>Technologies:</strong> HTML, CSS, JavaScript, PHP.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Program and course information.</li>
+                                          <li>Faculty and staff directory.</li>
+                                          <li>Event announcements.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 19: Job Seekers Website -->
+                            <div class="card">
+                                <img src="img/projects/projecr-web.jpeg" alt="Job Seekers Website" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/EgyTech-Team-Project-PH/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Job Seekers Website:</strong> A platform for job seekers.
+                                      <br><br>
+                                      <strong>Description:</strong> This platform helps job seekers find employment opportunities by providing job listings, resume uploads, and application tracking.
+                                      <br><br>
+                                      <strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Job listings and search functionality.</li>
+                                          <li>Resume upload and management.</li>
+                                          <li>Application tracking.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 20: Smart City -->
+                            <div class="card">
+                                <img src="img/projects/sm_city-4.jpg" alt="Smart City" class="card-image">
+                                <div class="card-overlay">
+                                    <button class="details-button" onclick="showDetails(`
+                                        <strong>Smart City:</strong> A project showcasing smart city solutions.
+                                        <br><br>
+                                        <strong>Description:</strong> This project demonstrates various smart city technologies, including IoT, data analytics, and automation.
+                                        <br><br>
+                                        <strong>Technologies:</strong> IoT, Python, Data Analytics.
+                                        <br><br>
+                                        <strong>Features:</strong>
+                                        <ul>
+                                            <li>Real-time data collection and analysis.</li>
+                                            <li>Integration with IoT devices.</li>
+                                            <li>Scalable architecture.</li>
+                                        </ul>
+                                    `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 21: Multi-Level Parking -->
+                            <div class="card">
+                                <img src="img/projects/parking-1.jpg" alt="Multi-Level Parking" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://algamelomer.github.io/Iot-Multi-level-Parking/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Multi-Level Parking:</strong> An IoT-based parking management system.
+                                      <br><br>
+                                      <strong>Description:</strong> This system uses IoT devices to manage and monitor parking spaces in a multi-level parking facility.
+                                      <br><br>
+                                      <strong>Technologies:</strong> IoT, Python, Flask.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Real-time parking space monitoring.</li>
+                                          <li>Integration with IoT sensors.</li>
+                                          <li>User-friendly interface.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 22: Line Following Car -->
+                            <div class="card">
+                                <img src="img/projects/lineCar.jpg" alt="Line Following Car" class="card-image">
+                                <div class="card-overlay">
+                                    <button class="details-button" onclick="showDetails(`
+                                        <strong>Line Following Car:</strong> An autonomous car that follows a line.
+                                        <br><br>
+                                        <strong>Description:</strong> This project involves building an autonomous car that can follow a predefined line using sensors and microcontrollers.
+                                        <br><br>
+                                        <strong>Technologies:</strong> Arduino, C++, Sensors.
+                                        <br><br>
+                                        <strong>Features:</strong>
+                                        <ul>
+                                            <li>Line detection using sensors.</li>
+                                            <li>Autonomous navigation.</li>
+                                            <li>Customizable path.</li>
+                                        </ul>
+                                    `)">Details</button>
+                                </div>
+                            </div>
+                            <!-- Project 23: Robotic Arm Car -->
+                            <div class="card">
+                                <img src="img/projects/armCar.jpg" alt="Robotic Arm Car" class="card-image">
+                                <div class="card-overlay">
+                                    <a href="https://github.com/ziad-abaza/robotic-arm-car" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <button class="details-button" onclick="showDetails(`
+                                      <strong>Robotic Arm Car:</strong> A car equipped with a robotic arm for various tasks.
+                                      <br><br>
+                                      <strong>Description:</strong> This project involves building a car with a robotic arm that can perform tasks like picking and placing objects.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Arduino, C++, Robotics.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Robotic arm control.</li>
+                                          <li>Object detection and manipulation.</li>
+                                          <li>Remote control functionality.</li>
+                                      </ul>
+                                  `)">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skills -->
+                    <div id="skills" class="tab-content">
+                        <div class="grid-container">
+                            <!-- Web Development Skills -->
+                            <div class="skill-card">
+                                <h3 class="skill-title">Web Development</h3>
+                                <div class="skill-badges">
+                                    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
+                                    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3">
+                                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
+                                    <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white" alt="Bootstrap">
+                                    <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+                                    <img src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vue.js&logoColor=white" alt="Vue.js">
+                                    <img src="https://img.shields.io/badge/Laravel-EF4135?logo=laravel&logoColor=white" alt="Laravel">
+                                    <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white" alt="Flask">
+                                </div>
+                            </div>
+
+                            <!-- AI & Machine Learning -->
+                            <div class="skill-card">
+                                <h3 class="skill-title">AI & Machine Learning</h3>
+                                <div class="skill-badges">
+                                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow">
+                                    <img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white" alt="Keras">
+                                    <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV">
+                                    <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
+                                    <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas">
+                                    <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy">
+                                </div>
+                            </div>
+
+                            <!-- Embedded Systems & IoT -->
+                            <div class="skill-card">
+                                <h3 class="skill-title">Embedded Systems & IoT</h3>
+                                <div class="skill-badges">
+                                    <img src="https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white" alt="Arduino">
+                                    <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=white" alt="Raspberry Pi">
+                                    <img src="https://img.shields.io/badge/NodeMCU-1E88E5?logo=nodemcu&logoColor=white" alt="NodeMCU">
+                                    <img src="https://img.shields.io/badge/Microcontrollers-FF6F00?logo=micropython&logoColor=white" alt="Microcontrollers">
+                                    <img src="https://img.shields.io/badge/Smart%20Home%20Systems-6200EE?logo=home-assistant&logoColor=white" alt="Smart Home Systems">
+                                </div>
+                            </div>
+
+                            <!-- Programming Languages -->
+                            <div class="skill-card">
+                                <h3 class="skill-title">Programming Languages</h3>
+                                <div class="skill-badges">
+                                    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+                                    <img src="https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white" alt="C++">
+                                    <img src="https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white" alt="C">
+                                    <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white" alt="Java">
+                                </div>
+                            </div>
+
+                            <!-- Tools & Technologies -->
+                            <div class="skill-card">
+                                <h3 class="skill-title">Tools & Technologies</h3>
+                                <div class="skill-badges">
+                                    <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git">
+                                    <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white" alt="Postman">
+                                    <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux">
+                                    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub">
+                                    <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual-studio-code&logoColor=white" alt="VS Code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section">
+              <h1 class="section-title highlight">Contact Me</h1>
+              <div class="contact-content">
+                  <form class="contact-form">
+                      <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" id="name" name="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" placeholder="Your Email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                      </div>
+                      <div class="btn-group">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                      </div>
+                  </form>
+                  <div class="contact-info">
+                      <h2 class="contact-subtitle">Get in Touch</h2>
+                      <p>If you have any questions or just want to say hello, feel free to reach out!</p>
+                      <ul class="contact-details">
+                          <li>
+                              <i class="fas fa-envelope"></i>
+                              <span>
+                                  Email: <a href="mailto:zeyad.h.abaza@gmail.com">zeyad.h.abaza@gmail.com</a>
+                              </span>
+                          </li>
+                          <li>
+                              <i class="fas fa-phone"></i>
+                              <span>
+                                  Phone: <a href="tel:+201006403927">+20 100 640 3927</a>
+                              </span>
+                          </li>
+                          <li>
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span>Location: Alexandria, Egypt</span>
+                          </li>
+                      </ul>
+                      <div class="social-icons">
+                          <a href="https://www.linkedin.com/in/ziad-h-abaza-82276331b" target="_blank" class="social-icon">
+                              <i class="fa-brands fa-linkedin"></i>
+                          </a>
+                          <a href="https://github.com/Ziad-Abaza" target="_blank" class="social-icon">
+                              <i class="fa-brands fa-github"></i>
+                          </a>
+                          <a href="https://wa.me/201006403927" target="_blank" class="social-icon">
+                              <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                          <a href="https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Ziad Hassan</h3>
+                    <p class="footer-text">
+                        &copy; 2023 Ziad Hassan. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ziad-h-abaza-82276331b" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Ziad-Abaza" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/201006403927" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+        </footer>
+        <button id="back-to-top" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <div id="detailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <p id="modalText"></p>
             </div>
         </div>
-        <nav class="quick-access-links">
-            <button class="burger-menu-btn" aria-label="Toggle Navigation Menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul>
-                <li><a href="#about">about me</a></li>
-                <li><a href="#skills">expertise</a></li>
-                <!-- <li><a href="#gallery">gallery</a></li> -->
-                <li><a href="#timeline">journey</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <!-- <li><a href="#contact">contact</a></li> -->
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="slider" data-aos="fade-up">
-            <div class="slider-container">
-                <div class="slide-show">
-                    <img src="images/slide-show/0.jpg" alt="Image 1">
-                    <div class="slide-text main">
-                        <h3><span>Welcome</span> to my world of work and achievements!</h3>
-                        <p>
-                            I'm Ziad Hassan, a <span>Full Stack</span> Web Developer. Here, you'll find a showcase of my
-                            projects, education, and experiences in IT. I hope you find something inspiring. Feel free
-                            to
-                            contact me for more information or collaboration. Thank you for visiting!
-                        </p>
-                    </div>
-                </div>
-                <div class="all-thumbnail">
-                    <img class="thumbnail item-1" src="images/slide-show/0.jpg" onclick="currentSlide(1)" alt="صورة 1">
-                    <img class="thumbnail item-2" src="images/slide-show/6.jpg" onclick="currentSlide(2)" alt="صورة 2">
-                    <img class="thumbnail item-3" src="images/slide-show/2.jpg" onclick="currentSlide(3)" alt="صورة 3">
-                </div>
-                <div class="slide-show">
-                    <img src="images/slide-show/6.jpg" alt="Image 2">
-                    <div class="slide-text">
-                        <h3><span>Projects</span> that Define My Career</h3>
-                        <p>
-                            Dive into a selection of my most notable projects, showcasing a blend of creativity and
-                            technical expertise. From <span>web applications</span> to <span>mobile apps</span>, each
-                            project is a testament to my commitment to delivering high-quality solutions. Explore the
-                            details and see how these projects have made an impact.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide-show">
-                    <img src="images/slide-show/2.jpg" alt="Image 3">
-                    <div class="slide-text">
-                        <h3><span>Education</span> and Learning</h3>
-                        <p>
-                            My educational journey has been filled with enriching experiences and profound knowledge.
-                            Here, I share the milestones that have shaped my understanding of technology and my ability
-                            to innovate. From formal education to self-learning endeavors, discover how I stay at the
-                            forefront of the industry.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="about" data-aos="fade-up">
-            <div class="about-container">
-                <div class="about-description-content" data-aos="fade-right" data-aos-delay="200">
-                    <div class="about-text">
-                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">About <span>me</span></h2>
-                        <p data-aos="fade-up" data-aos-delay="200">
-                            Hello, I'm Ziad Hassan, a student majoring in Information Technology at the <span>Borg El
-                                Arab
-                                University of Technology</span>. My journey into the world of programming began with a
-                            deep
-                            passion for technology and a strong interest in crafting innovative web experiences.
-                            <br>
-                            I specialize in Full Stack Development, where I've honed my programming skills using
-                            <span>PHP</span>, <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
-                            <span>Tailwind</span>
-                            , <span>Bootstrap</span>,and <span>Laravel</span>, along with
-                            managing databases using <span>MySQL</span> and developing <span>APIs</span>. Designing and
-                            implementing web projects is my
-                            passion, and I enjoy creating attractive user interfaces and robust systems alike.
-                            <br>
-                            Furthermore, I have experience in programming languages such as <span>C</span>,
-                            <span>C++</span>, <span>Java</span>,
-                            and <span>Python</span>, which I apply in various domains including Internet of Things
-                            (<span>IoT</span>) and
-                            Artificial Intelligence (<span>AI</span>) applications. This gives me a profound
-                            understanding
-                            of future tech
-                            and how it can be applied to enhance people’s lives.
-                            <br>
-                            I'm always ready for new challenges and eager to contribute to innovative tech projects.
-                            Software development isn't just my career; it's my passion, and I'm constantly striving to
-                            improve and develop my skills for the ever-evolving world of technology.
-                        </p>
-                    </div>
-                    <div class="btn-dw" >
-                        <a href="Ziad-Hassan-Web Developer-CV.pdf" class="download-cv" download>download cv</a>
-                    </div>
-                </div>
-                <div class="about-social-links">
-                    <div class="social-icon"  data-aos="fade-up" data-aos-delay="100">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="social-icon"  data-aos="fade-up" data-aos-delay="200">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                    <div class="social-icon"  data-aos="fade-up" data-aos-delay="300">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                    <div class="social-icon" data-aos="fade-up" data-aos-delay="400">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="social-icon" data-aos="fade-up" data-aos-delay="500">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="hexagon" data-aos="fade-up" data-aos-delay="200">
-                <div class="hexagon-in1">
-                </div>
-                <div class="hexagon-in2">
-                    <img src="ziad-hassan.png" alt="Profile Image">
-                </div>
-            </div>
-        </section>
-        <section class="timeline " id="timeline" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="section-title">My <span>Journey</span></h2>
-            <div class="container-timeline">
-                <!-- Education -->
-                <div class="timeline-box "  data-aos="fade-up" data-aos-delay="200">
-                    <div class="box-content">
-                        <div class="timeline-image">
-                            <img src="images/timeline/college.jpg" alt="Education">
-                        </div>
-                        <h4>Education</h4>
-                        <p>I am currently studying Information Technology at <span>Borg El Arab University of
-                                Technology</span>.
-                            This educational journey has equipped me with a strong foundation in technology and
-                            programming.</p>
-                    </div>
-                </div>
-                <!-- Web Development -->
-                <div class="timeline-box " data-aos="fade-up" data-aos-delay="300">
-                    <div class="box-content">
-                        <div class="timeline-image">
-                            <img src="images/timeline/web-developer.jpg" alt="Web Development">
-                        </div>
-                        <h4>Web Development</h4>
-                        <p>As a dedicated web developer, I am committed to crafting dynamic and responsive web
-                            applications that
-                            deliver exceptional user experiences. I constantly seek new challenges and strive to stay at
-                            the
-                            forefront of technology and innovation.</p>
-                    </div>
-                </div>
-                <!-- Embedded Systems -->
-                <div class="timeline-box " data-aos="fade-up" data-aos-delay="400">
-                    <div class="box-content">
-                        <div class="timeline-image">
-                            <img src="images/timeline/embedded.jpg" alt="Embedded Systems">
-                        </div>
-                        <h4>Embedded Systems</h4>
-                        <p>I work on embedded systems, integrating hardware and software to create functional and
-                            efficient
-                            solutions. My projects often involve programming with <span>C</span> and <span>C++</span>.
-                        </p>
-                    </div>
-                </div>
-                <!-- IT Club -->
-                <div class="timeline-box " data-aos="fade-up" data-aos-delay="500">
-                    <div class="box-content">
-                        <div class="timeline-image">
-                            <img src="images/timeline/it-club.png" alt="IT Club">
-                        </div>
-                        <h4>IT Club Founder</h4>
-                        <p>Co-founder of the <span><a href="https://ziad-abaza.github.io/it-club-site/">IT Club</a></span> at the university, where we focus on promoting
-                            technology and
-                            programming among students and professionals.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="skills" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="section-title">Our <span>Expertise</span></h2>
-            <div class="skills-container">
-                <div class="skill" data-percentage="95" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Backend</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 0;"></div>
-                    </div>
-                </div>
-                <div class="skill" data-percentage="93" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Frontend</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 0;"></div>
-                    </div>
-                </div>
-                <div class="skill" data-percentage="85" data-aos="fade-up" data-aos-delay="300">
-                    <h3>API</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 0;"></div>
-                    </div>
-                </div>
-                <div class="skill" data-percentage="80" data-aos="fade-up" data-aos-delay="400">
-                    <h3>IOT</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 0;"></div>
-                    </div>
-                </div>
-                <div class="skill" data-percentage="60" data-aos="fade-up" data-aos-delay="500">
-                    <h3>AI & ML</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 0;"></div>
-                    </div>
-                </div>
-                <div class="skill" data-percentage="85" data-aos="fade-up" data-aos-delay="600">
-                    <h3>Ajax</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 0;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section id="achievements" class="achievements" data-aos="fade-up">
-            <h2 class="section-title">My <span>Achievements</span></h2>
-                <div class="award-card-container">
-                    <div class="award-card">
-                        <div class="image-wrapper">
-                            <img src="images/gallery/myHonour.jpg" alt="Award Image">
-                        </div>
-                        <div class="award-content">
-                            <p class="award-title">Card Hover</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipii
-                                voluptas ten mollitia pariatur odit, ab
-                                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                                necessitatibus dignissimos molestias.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="award-card">
-                        <div class="image-wrapper">
-                            <img src="images/gallery/president-3.jpg" alt="Award Image">
-                        </div>
-                        <div class="award-content">
-                            <p class="award-title">Card Hover</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipii
-                                voluptas ten mollitia pariatur odit, ab
-                                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                                necessitatibus dignissimos molestias.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="award-card">
-                        <div class="image-wrapper">
-                            <img src="images/gallery/president-1.jpg" alt="Award Image">
-                        </div>
-                        <div class="award-content">
-                            <p class="award-title">Card Hover</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipii
-                                voluptas ten mollitia pariatur odit, ab
-                                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                                necessitatibus dignissimos molestias.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        </section> -->
-
-        <section class="portfolio "  id="portfolio" data-aos="fade-up" data-aos-delay="200">
-            <div class="container-products">
-                <h2 class="section-title">our <span>portfolio</span></h2>
-                <div class="btn-products">
-                    <button id="all">all</button>
-                    <button id="iot">iot</button>
-                    <button id="web">web</button>
-                    <!-- <button id="app">app</button> -->
-                </div>
-                <div class="products-box" data-aos="fade-up" data-aos-delay="100">
-                    <!-- project 1 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/cruds.png" class=""
-                             data-category="web" alt="cruds">
-                        <a href="https://ziad-abaza.github.io/GRUDS/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 2 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/dashboard.png" class=""
-                             data-category="web" alt="dashboard">
-                        <a href="https://ziad-abaza.github.io/dashboard-1/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 3 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/FETCHREBOS-1.png" class=""
-                             data-category="web" alt="FETCH REBOS">
-                        <a href="https://ziad-abaza.github.io/fetchRebos/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 4 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/OBJECT-QUESTIIONS.png" class=""
-                             data-category="web" alt="OBJECT QUESTIIONS">
-                        <a href="https://ziad-abaza.github.io/object-Questiions/"
-                            class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 5 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/SPACIAL-DESIGN.png" class=""
-                             data-category="web" alt="SPACIAL DESIGN">
-                        <a href="https://ziad-abaza.github.io/Spacial-Design/"
-                            class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 6 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/armCar.jpg" class=""
-                             data-category="iot" alt="arm car">
-                        <a href="project.html?project=arm_car" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 7 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/lineCar.jpg" class=""
-                             data-category="iot" alt="line car">
-                        <a href="project.html?project=line_car" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 8 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/parking.jpg" class=""
-                             data-category="iot" alt="parking">
-                        <a href="project.html?project=get_parking" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 9 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/article.png" class=""
-                             data-category="web" alt="article">
-                        <a href="https://ziad-abaza.github.io/article/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 10 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/itclub-media.png" class=""
-                             data-category="web" alt="it club social media">
-                        <a href="https://ziad-abaza.github.io/it-club-socialMedia/"
-                            class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 11 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/event-2.jpeg" class=""
-                             data-category="web" alt="it club social media">
-                        <a href="https://ziad-abaza.github.io/it-projects-exhibition-2/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 12 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/event-1.jpeg" class=""
-                             data-category="web" alt="it club social media">
-                        <a href="https://ziad-abaza.github.io/firs-it-projects-exhibition/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 13 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/it-club.jpeg" class=""
-                             data-category="web" alt="it club social media">
-                        <a href="https://ziad-abaza.github.io/it-club-site/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 14 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/college.jpeg" class=""
-                             data-category="web" alt="it club social media">
-                        <a href="https://batechu.com/" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 15 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/projecr-web.jpeg" class=""
-                             data-category="web" alt="it club social media">
-                        <a href="http://job-seekers.great-site.net" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 16 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/sm_city-4.jpg" class=""
-                             data-category="iot" alt="smart city">
-                        <a href="project.html?project=sm_city" class="product-link"><span>View</span></a>
-                    </div>
-                    <!-- project 16 -->
-                    <div class="hover-box" data-aos="fade-up" data-aos-delay="200">
-                        <img loading="lazy" src="images/project/exam-grade.jpg" class=""
-                             data-category="web" alt="smart city">
-                        <a href="https://www.batugrades.top/" class="product-link"><span>View</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer >
-        <div class="footer-container "   >
-            <!-- <div class="social">
-                        <a href='https://www.linkedin.com/in/ziad-h-abaza-8220bb28a'><i class="fab fa-linkedin"></i></a>
-                        <a href='https://www.facebook.com/ziad.hassan.148116?mibextid=haYZDX'><i class="fab fa-facebook"></i></a>
-                        <a href="https://wa.me/+201006403927"><i class="fab fa-whatsapp"></i></a>
-                        <a href='https://instagram.com/3_p0ox?igshid=MzNlNGNkZWQ4Mg=='><i class="fab fa-instagram"></i></a>
-                        <a href='https://github.com/Ziad-Abaza'><i class="fab fa-github"></i></a>
-                    </div> -->
-            <div class="footer-info">
-                <p>Designed and Developed by Ziad H. Abaza</p>
-                <p>&copy; All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-
+        <script src="js/script.js"></script>
+    </body>
 </html>
