@@ -1,11 +1,20 @@
 :root {
-  --primary-text-color: #e0e0e0;
+  --primary-text-color: #e2d8d8;
+  --secondary-text-color: #b0b0b0;
+  --liner-color-1: linear-gradient(to right, #7dB9FF, #1e90ff);
+  --liner-color-2: linear-gradient(to left, #0D3E6F, #2d659e);
+  --shadow-color: #95C2F0;
+  --background-color: #0D3E6F;
+  --secondary-background-color: #0e0a2b;
+  --background-aura: linear-gradient(135deg, rgba(255, 0, 150, 0.1), rgba(0, 150, 255, 0.1), rgba(150, 255, 0, 0.1));
+  /* --primary-text-color: #e0e0e0;
   --secondary-text-color: #b0b0b0;
   --liner-color-1: linear-gradient(to right, #8a2be2, #1e90ff);
   --liner-color-2: linear-gradient(to right, #1e024c, #3a006b);
   --shadow-color: #a94fff;
   --background-color: #1e024c;
-  --secondary-background-color: #0e0a2b;
+  --secondary-background-color: #0e0a2b; */
+  /* --background-aura: linear-gradient(135deg, rgba(255, 0, 150, 0.1), rgba(0, 150, 255, 0.1), rgba(150, 255, 0, 0.1)); */
 }
 
 * {
@@ -60,12 +69,9 @@ a:active {
   border-radius: 50%;
   filter: blur(20px); 
   animation: float 10s infinite alternate ease-in-out;
-  background: linear-gradient(135deg,
-      rgba(255, 0, 150, 0.1), 
-      rgba(0, 150, 255, 0.1),
-      rgba(150, 255, 0, 0.1));
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
-  -webkit-filter: blur(10px); 
+  background: var(--background-aura);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  -webkit-filter: blur(15px); 
   z-index: 11;
   mix-blend-mode: overlay; 
 }
@@ -1233,7 +1239,13 @@ a:active {
   }
 
   .btn-group {
-    flex-flow: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-group .btn{
+    width: fit-content !important;
   }
 
   .skills-icons {
@@ -1264,7 +1276,8 @@ a:active {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 15px; 
+  overflow: hidden;
+  gap: 10px;
 }
 
 .gh-repo-card:hover {
@@ -1272,31 +1285,24 @@ a:active {
   box-shadow: 0 5px 15px var(--shadow-color);
 }
 
+.gh-repo-image {
+  width: 100%;
+  height: 200px !important; 
+  object-fit: cover !important; 
+  border-radius: 10px 10px 0 0; 
+}
+
 .gh-repo-name {
   font-size: 1.5rem;
-  margin: 0;
+  margin: 0px 15px; 
   color: var(--primary-text-color);
 }
 
 .gh-repo-description {
-  font-size: 1rem;
-  color: var(--secondary-text-color);
-  margin: 0;
-  flex-grow: 1;
-}
-
-.gh-repo-stats {
-  display: flex;
-  gap: 10px;
-  margin: 0;
-}
-
-.gh-repo-stats span {
-  background: rgba(176, 176, 176, 0.3);
-  padding: 5px 10px;
-  border-radius: 5px;
   font-size: 0.9rem;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  /* margin: 10px 15px 15px 15px;  */
+  flex-grow: 1;
 }
 
 .gh-btn-container {
