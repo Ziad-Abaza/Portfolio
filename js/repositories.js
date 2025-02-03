@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(`Error fetching social preview: ${error}`);
     }
 
-    return `https://via.placeholder.com/400x200.png?text=${encodeURIComponent(
-      repo.name
-    )}`;
+    return `./img/placeholder.png`;
   }
 
   async function fetchRepositories(page) {

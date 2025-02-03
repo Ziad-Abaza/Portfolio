@@ -6,6 +6,7 @@
   --shadow-color: #95C2F0;
   --background-color: #0D3E6F;
   --secondary-background-color: #0e0a2b;
+  --sub-background-color: rgb(14, 10, 43, 0.2);;
   --background-aura: linear-gradient(135deg, rgba(255, 0, 150, 0.1), rgba(0, 150, 255, 0.1), rgba(150, 255, 0, 0.1));
   /* --primary-text-color: #e0e0e0;
   --secondary-text-color: #b0b0b0;
@@ -735,7 +736,7 @@ a:active {
 }
 
 .btn-group .btn-download {
-  background: var(--secondary-background-color);
+  background: var(--sub-background-color);
   border: 2px solid var(--liner-color-1);
 }
 
@@ -765,7 +766,7 @@ a:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--secondary-background-color);
+  background: var(--sub-background-color);
   color: var(--primary-text-color);
   text-decoration: none;
   transition: all 0.3s;
@@ -914,11 +915,11 @@ a:active {
   padding: 10px 20px;
   margin: 5px;
   border: none;
-  background: var(--secondary-background-color);
+  background: var(--sub-background-color);
   color: var(--primary-text-color);
   cursor: pointer;
   transition: all 0.3s;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .filter-button.active {
@@ -1060,7 +1061,7 @@ a:active {
   padding: 10px;
   border: 1px solid var(--secondary-text-color);
   border-radius: 5px;
-  background: var(--secondary-background-color);
+  background: var(--sub-background-color);
   color: var(--primary-text-color);
   font-size: 1rem;
 }
