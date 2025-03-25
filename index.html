@@ -14,7 +14,7 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <div class="aura-wrapper">
+        <!-- <div class="aura-wrapper">
             <div class="aura-circle aura-circle--large"></div>
             <div class="aura-circle aura-circle--medium"></div>
             <div class="aura-circle aura-circle--small"></div>
@@ -38,7 +38,7 @@
                     <br>
                     <span class="highlight typing-text-2"></span>
                 </h1>
-            </div>
+            </div> -->
         </div>
         <header class="header">
             <div class="header-container">
@@ -217,37 +217,37 @@
                             <!-- <button class="filter-button" data-filter="other">Other Projects</button> -->
                         </div>
                         <div class="grid-container">
-                            <!-- Project 1: Fetch Repos -->
+                            <!-- Project 1: Simple Store API -->
                             <div class="card" data-category="web">
-                                <img src="img/projects/fetchRebos.jpeg" alt="Fetch Repos" class="card-image">
+                                <img src="img/projects/simple-store-api.jpeg" alt="Simple Store API" class="card-image">
                                 <div class="card-overlay">
-                                    <a href="https://ziad-abaza.github.io/fetchRebos/" target="_blank" class="project-link">
+                                    <a href="https://github.com/Ziad-Abaza/simple-store-api/" target="_blank" class="project-link">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                     <button class="details-button" onclick="showDetails(`
-                                      <strong>Fetch Repos</strong><br>
-                                      A GitHub repository fetcher that allows users to search for repositories by username.<br><br>
-                                      <strong>Technologies:</strong> HTML, CSS, JavaScript, GitHub API.<br>
-                                      <strong>Features:</strong> Search functionality, responsive design.<br>
-                                      <strong>Challenges:</strong> Handling API rate limits and ensuring smooth user experience.<br>
-                                  `)">Details</button>
+                                        <strong>Simple Store API</strong><br>
+                                        A RESTful API built with Laravel for managing a simple e-commerce platform.<br><br>
+                                        <strong>Technologies:</strong> Laravel 10, PHP 8.1, MySQL, Laravel Sanctum.<br>
+                                        <strong>Features:</strong> User authentication, product management, cart system, order processing, favorites, and comments.<br>
+                                        <strong>Challenges:</strong> Handling authentication securely and optimizing database queries for performance.<br>
+                                    `)">Details</button>
                                 </div>
                             </div>
-                            <!-- Project 2: Dashboard UI -->
-                            <div class="card" data-category="web">
-                                <img src="img/projects/dashboard.png" alt="Dashboard UI" class="card-image">
-                                <div class="card-overlay">
-                                    <a href="https://ziad-abaza.github.io/beginner-dashboard-ui/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
+                            <!-- Project 2: Embedded Systems Educational Kit -->
+                            <div class="card" data-category="iot">                                 
+                                <img src="img/projects/Microcontroller-Learning-Kit.jpg" alt="Microcontroller Learning Kit" class="card-image">                                 
+                                <div class="card-overlay">                                     
+                                    <a href="https://github.com/ziad-abaza/Microcontroller-Learning-Kit/" target="_blank" class="project-link">                                         
+                                        <i class="fas fa-external-link-alt"></i>                                     
+                                    </a>                                     
                                     <button class="details-button" onclick="showDetails(`
-                                      <strong>Dashboard UI</strong><br>
-                                      A beginner-friendly dashboard design for managing data and analytics.<br><br>
-                                      <strong>Technologies:</strong> HTML, CSS, JavaScript.<br>
-                                      <strong>Features:</strong> Interactive charts, responsive layout.<br>
-                                      <strong>Challenges:</strong> Ensuring compatibility across different devices.<br>
-                                  `)">Details</button>
-                                </div>
+                                        <strong>Embedded Systems Educational Kit</strong><br>
+                                        A practical learning kit for embedded systems students, featuring six experiments from a complete course.<br><br>
+                                        <strong>Technologies:</strong> Microcontrollers, Sensors, LoRa, ESP-NOW.<br>
+                                        <strong>Features:</strong> Hands-on experiments with code, schematics, and 3D models.<br>
+                                        <strong>Challenges:</strong> Ensuring reliable communication between wireless modules and optimizing circuit designs.<br>
+                                    `)">Details</button>                                 
+                                </div>                             
                             </div>
                             <!-- Project 3: Exam Grade Calculator -->
                             <div class="card" data-category="web">
@@ -266,18 +266,27 @@
                                 </div>
                             </div>
                             <!-- Project 4: Book Borrowing System -->
-                            <div class="card" data-category="desktop">
-                                <img src="img/projects/book.png" alt="Book Borrowing System" class="card-image">
+                            <div class="card" data-category="ai">
+                                <img src="img/projects/lane-navigator-AutonomousCar.png" alt="Lana Navigator" class="card-image">
                                 <div class="card-overlay">
-                                    <a href="https://github.com/ziad-abaza/Book-Borrowing-System-Desktop" target="_blank" class="project-link">
+                                    <a href="https://github.com/Ziad-Abaza/lane-navigator-AutonomousCar" target="_blank" class="project-link">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                     <button class="details-button" onclick="showDetails(`
-                                      <strong>Book Borrowing System</strong><br>
-                                      A desktop application for managing book borrowing in libraries.<br><br>
-                                      <strong>Technologies:</strong> Java, JavaFX, MySQL.<br>
-                                      <strong>Features:</strong> Book management, user authentication.<br>
-                                      <strong>Challenges:</strong> Database design and ensuring data integrity.<br>
+                                      <strong>Lana Navigator:</strong> A lane detection system for autonomous vehicles.
+                                      <br><br>
+                                      <strong>Description:</strong> 
+                                      This project is the beginning of an autonomous car system that uses for Reinforcement Learning (RL). It focuses on detecting lanes, calculating the vehicles position within the lane, and applying actions such as steering and speed adjustments. This serves as an early stage for developing a fully self-driving car.
+                                      <br><br>
+                                      <strong>Technologies:</strong> Python, OpenCV, Numpy.
+                                      <br><br>
+                                      <strong>Features:</strong>
+                                      <ul>
+                                          <li>Integration of deeper Reinforcement Learning models for better decision-making.</li>
+                                          <li>More sophisticated lane detection algorithms using deep learning.</li>
+                                          <li>Simulation of real-world conditions like road curves and obstacles.</li>
+                                          <li>Integration with self-driving car platforms for real-time testing.</li>
+                                      </ul>
                                   `)">Details</button>
                                 </div>
                             </div>
@@ -363,7 +372,7 @@
                             <div class="card" data-category="web">
                                 <img src="img/projects/Library-Mangement-Systm.jpeg" alt="Library Management System" class="card-image">
                                 <div class="card-overlay">
-                                    <a href="https://github.com/ziad-abaza/Library-Mangement-Systm" target="_blank" class="project-link">
+                                    <a href="https://github.com/Ziad-Abaza/Library-Mangement-api" target="_blank" class="project-link">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                     <button class="details-button" onclick="showDetails(`
